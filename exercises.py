@@ -60,11 +60,29 @@
 # Using the slice operator, assign a new tuple containing only the last two food strings in the foods to a variable named last_two_foods.
 
 
-def slice_foods():
-    foods = ("pizza", "tacos", "chicken", "spaghetti")
-    last_two_foods = foods[-2:]
-    return last_two_foods
+# def slice_foods():
+#     foods = ("pizza", "tacos", "chicken", "spaghetti")
+#     last_two_foods = foods[-2:]
+#     return last_two_foods
 
 
-# # Call the function and print the result
-print("Exercise 3:", slice_foods())
+# # # Call the function and print the result
+# print("Exercise 3:", slice_foods())
+
+# Exercise 4: Dictionaries and String Formatting
+#
+# Create a dictionary named home_town containing the keys of city, state, and population.
+# Using the home_town dictionary, assign to a variable named home_town_message a string with this format: “I was born in <city>, <state> - population of <population>”
+
+def hometown_info():
+    # your code here
+    home_town = {
+        "city": "Jeffersonville",
+        "state": "New York",
+        "population": 394
+    }
+
+    return (f'I was born in {home_town['city']}, {home_town['state']} - population of {home_town['population']}.')
+
+# Call the function and print the result
+print('Exercise 4:', hometown_info())
