@@ -25,17 +25,17 @@
 # Assign the last student’s name to a variable named last_student.
 
 
-def manage_students():
-    students = ["Johnny", "Craig", "Matt", "Philip"]
+# def manage_students():
+#     students = ["Johnny", "Craig", "Matt", "Philip"]
 
-    first_student = students[1]
-    last_student = students[-1]
+#     first_student = students[1]
+#     last_student = students[-1]
 
-    return first_student, last_student
+#     return first_student, last_student
 
 
-# Call the function and print the result
-print("Exercise 1:", manage_students())
+# # Call the function and print the result
+# print("Exercise 1:", manage_students())
 
 # Exercise 2: Loop and String Concatenation
 #
@@ -43,16 +43,28 @@ print("Exercise 1:", manage_students())
 # Create a variable named meal and assign an empty string to it.
 # Use a for loop to iterate over the strings in foods and append each string to meal.
 
-def combine_foods():
-    foods = ('pizza', 'tacos', 'chicken', 'spaghetti')
-    meal = ""
-    
-    for food in foods:
-        meal += food + " "
-    
-    return meal
+# def combine_foods():
+#     foods = ('pizza', 'tacos', 'chicken', 'spaghetti')
+#     meal = ""
 
-# Call the function and print the result
-print('Exercise 2:', combine_foods())
+#     for food in foods:
+#         meal += food + " "
+
+#     return meal
+
+# # Call the function and print the result
+# print('Exercise 2:', combine_foods())
+
+# Exercise 3: Slicing Tuples
+#
+# Using the slice operator, assign a new tuple containing only the last two food strings in the foods to a variable named last_two_foods.
 
 
+def slice_foods():
+    foods = ("pizza", "tacos", "chicken", "spaghetti")
+    last_two_foods = foods[-2:]
+    return last_two_foods
+
+
+# # Call the function and print the result
+print("Exercise 3:", slice_foods())
